@@ -108,7 +108,7 @@ export default function AboutPage() {
                 Flowery Branch, GA
               </div>
               <Button asChild variant="ghost" className="text-blue-100 hover:text-white hover:bg-white/10">
-                <Link href="/resume.pdf" target="_blank">
+                <Link href="/resume.docx" target="_blank">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </Link>
