@@ -91,7 +91,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Image
-              src="/placeholder.svg?height=150&width=150"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKLFJnA8-LSY7w-h-lwvhcjM1nNWsLUmwumQ&s?height=150&width=150"
               alt="Toribio Turcios"
               width={150}
               height={150}

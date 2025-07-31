@@ -4,33 +4,6 @@ import { ArrowRight, Download } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
-const featuredArticles = [
-  {
-    id: 1,
-    title: "The Future of Electric Vehicle Charging Infrastructure",
-    publication: "MotorGear Weekly",
-    image: "/placeholder.svg?height=300&width=500",
-    excerpt: "Exploring the rapid evolution of EV charging networks and their impact on automotive adoption.",
-    category: "EV Tech",
-  },
-  {
-    id: 2,
-    title: "Restoring a 1967 Mustang Fastback: A Technical Deep Dive",
-    publication: "Classic Car Enthusiast",
-    image: "/placeholder.svg?height=300&width=500",
-    excerpt:
-      "A comprehensive look at the challenges and rewards of bringing a classic American muscle car back to life.",
-    category: "Classic Cars",
-  },
-  {
-    id: 3,
-    title: "MotoGP Technology: How Racing Innovations Reach Your Garage",
-    publication: "Racing Tech Today",
-    image: "/placeholder.svg?height=300&width=500",
-    excerpt: "Tracing the path from cutting-edge racing technology to everyday automotive applications.",
-    category: "Motorsports",
-  },
-]
 
 const services = [
   {
@@ -127,67 +100,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Articles */}
-      <section className="py-20 bg-[#F6F9FC]">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0A2540] mb-4">Featured Work</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              A curated selection of recent automotive journalism projects showcasing technical depth and engaging
-              storytelling.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredArticles.map((article) => (
-              <Card
-                key={article.id}
-                className="group border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden"
-              >
-                <div className="relative overflow-hidden">
-                  <Image
-                    src={article.image || "/placeholder.svg"}
-                    alt={article.title}
-                    width={500}
-                    height={300}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-[#635BFF] text-white px-3 py-1 rounded-full text-sm font-medium">
-                      {article.category}
-                    </span>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <p className="text-sm text-[#635BFF] font-medium mb-2">For {article.publication}</p>
-                  <h3 className="text-xl font-semibold text-[#0A2540] mb-3 group-hover:text-[#635BFF] transition-colors">
-                    {article.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">{article.excerpt}</p>
-                  <Button asChild variant="ghost" className="text-[#635BFF] hover:text-[#5A52E8] p-0">
-                    <Link href={`/articles/${article.id}`}>
-                      Read Case Study
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-[#635BFF] text-[#635BFF] hover:bg-[#635BFF] hover:text-white bg-transparent"
-            >
-              <Link href="/portfolio">
-                View All Articles
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+  
 
       {/* Profile Snippet */}
       <section className="py-20 bg-white">
