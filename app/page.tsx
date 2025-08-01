@@ -34,7 +34,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-[#F6F9FC]">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-[#0A2540] via-[#0A2540] to-[#1a3a5c] text-white">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=800&width=1200')] opacity-10 bg-cover bg-center" />
+        <div className="absolute inset-0 bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjDrvI5oR5VaVyN0RzvNb_y69UoqMeJ14-Zw&s?height=800&width=1200')] opacity-10 bg-cover bg-center" />
         <div className="relative container mx-auto px-4 py-24 md:py-32">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div className="space-y-4">
